@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-  <img src="https://avatars.githubusercontent.com/u/342573852?s=160&v=4" width="88" alt="VSQ Studio Logo" />
-</p>
-
-<p align="center">
-  <img src="assets/pixel-header.svg" width="100%" alt="VSQ Studio — Build, Share, Explore" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pixel-header-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/pixel-header-light.svg" />
+    <img src="assets/pixel-header.svg" width="100%" alt="VSQ Studio — Build, Share, Explore" />
+  </picture>
 </p>
 
 <p align="center">
@@ -47,18 +47,14 @@ VSQ Studio 是一个面向创作者与开发者的开源协作空间，关注软
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake.svg" />
-    <img src="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub contribution snake animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar.svg" />
+    <img src="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar.svg" width="100%" alt="VSQ-Studio 组织级每日提交贡献日历" />
   </picture>
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio GitHub profile details" />
-</p>
-
-<p align="center">
-  <sub>说明：Profile Details 使用 VSQ-Studio 组织数据；蛇形动画由仓库变量 <code>SNAKE_GITHUB_USERNAME</code> 指定的维护者个人贡献日历生成，不代表组织级贡献日历。</sub>
+  <sub>组织级贡献日历由 GitHub Actions 自动生成：汇总 VSQ-Studio 所有公开、非 Fork 仓库默认分支中的提交记录，按 UTC 日期统计最近 365 天的活动。不依赖任何维护者个人账号。</sub>
 </p>
 
 <img src="assets/pixel-divider.svg" width="100%" alt="" />
