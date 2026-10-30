@@ -1,129 +1,78 @@
-<div align="center">
+<p align="right">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
 
-<img src="https://raw.githubusercontent.com/VSQ-Studio/.github/main/profile/assets/vsq-pixel-banner.svg" alt="VSQ Studio — Build, Share, Explore" width="100%">
+<p align="center">
+  <img src="https://avatars.githubusercontent.com/u/342573852?s=160&v=4" width="88" alt="VSQ Studio Logo" />
+</p>
 
-**[简体中文](README.md) · [English](README.en.md)**
+<p align="center">
+  <img src="assets/pixel-header.svg" width="100%" alt="VSQ Studio — Build, Share, Explore" />
+</p>
 
-</div>
+<p align="center">
+  <a href="https://github.com/VSQ-Studio"><img src="https://img.shields.io/badge/GITHUB-VSQ--STUDIO-171B22?style=flat-square&logo=github&logoColor=white" alt="GitHub organization" /></a>
+  <a href="https://github.com/orgs/VSQ-Studio/repositories"><img src="https://img.shields.io/badge/EXPLORE-REPOSITORIES-5BCEFA?style=flat-square&logo=github&logoColor=111318" alt="Explore repositories" /></a>
+</p>
 
-<div align="center">
+<img src="assets/pixel-divider.svg" width="100%" alt="" />
 
-### `> BUILD. SHARE. EXPLORE._`
+## `01 / 关于 VSQ STUDIO`
 
-**VSQ Studio 是一个面向创作者与开发者的开源协作空间。**
+VSQ Studio 是一个面向创作者与开发者的开源协作空间，关注软件、工具与创意技术。
 
-探索想法，构建工具，分享成果，让有趣的项目持续生长。
+我们相信好的作品来自持续探索与开放协作。探索想法、构建工具、分享成果，让有趣的项目持续生长。
 
-[组织主页](https://github.com/VSQ-Studio) · [全部仓库](https://github.com/orgs/VSQ-Studio/repositories) · [参与贡献](https://github.com/VSQ-Studio/.github/blob/main/CONTRIBUTING.md)
+<p align="center">
+  <code>OPEN SOURCE</code>　 <code>COLLABORATION</code>　 <code>EXPERIMENT</code>
+</p>
 
-</div>
+<img src="assets/pixel-divider.svg" width="100%" alt="" />
 
----
+## `02 / 社区贡献`
 
-## `01 / WHO WE ARE`
+<p align="center">
+  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio GitHub statistics" />
+  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio repositories per language" />
+  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio most used commit languages" />
+</p>
 
-我们相信好的作品来自持续探索与开放协作。VSQ Studio 关注软件、工具与创意技术，欢迎不同背景的开发者加入，一起把想法变成可用的作品。
+<p align="center">
+  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=VSQ-Studio&theme=matrix&no-frame=true&no-bg=true&margin-w=4&column=7" alt="VSQ Studio GitHub trophies" />
+</p>
 
-```text
-┌────────────────────────────────────────────────────────────┐
-│  OPEN SOURCE     ██████████   Share knowledge              │
-│  COLLABORATION   ██████████   Build together               │
-│  EXPERIMENT      ██████████   Keep exploring               │
-└────────────────────────────────────────────────────────────┘
-```
+<img src="assets/pixel-divider.svg" width="100%" alt="" />
 
-## `02 / COMMUNITY CONTRIBUTIONS`
+## `03 / GITHUB 活动`
 
-**社区由每一次 Issue、Pull Request、代码评审和文档改进共同构成。**
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake.svg" />
+    <img src="https://raw.githubusercontent.com/VSQ-Studio/.github/output/github-contribution-grid-snake.svg" width="100%" alt="GitHub contribution snake animation" />
+  </picture>
+</p>
 
-欢迎从一个小问题开始参与。下面的贡献者面板由公开仓库的贡献记录生成；首次加载可能需要一点时间。
+<p align="center">
+  <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio GitHub profile details" />
+</p>
 
-### Contributors · XQSL_PyQt
+<p align="center">
+  <sub>说明：Profile Details 使用 VSQ-Studio 组织数据；蛇形动画由仓库变量 <code>SNAKE_GITHUB_USERNAME</code> 指定的维护者个人贡献日历生成，不代表组织级贡献日历。</sub>
+</p>
 
-[查看贡献记录 →](https://github.com/VSQ-Studio/XQSL_PyQt/graphs/contributors)
+<img src="assets/pixel-divider.svg" width="100%" alt="" />
 
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/XQSL_PyQt" alt="XQSL_PyQt contributors" width="100%">
+## `04 / 加入 VSQ STUDIO`
 
-### Contributors · JTTY-Go
+无论你是开发者、设计者、文档贡献者，还是单纯对项目感兴趣，都欢迎浏览我们的开源项目，并通过 Issue 或 Pull Request 参与改进。
 
-[查看贡献记录 →](https://github.com/VSQ-Studio/JTTY-Go/graphs/contributors)
+<p align="center">
+  <a href="https://github.com/orgs/VSQ-Studio/repositories"><img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-5BCEFA?style=flat-square&logo=github&logoColor=111318" alt="View all projects" /></a>
+  <a href="https://github.com/VSQ-Studio/.github"><img src="https://img.shields.io/badge/COMMUNITY-F5A9B8?style=flat-square&logo=github&logoColor=111318" alt="Community repository" /></a>
+</p>
 
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/JTTY-Go" alt="JTTY-Go contributors" width="100%">
-
-### Contributors · SATSSTV-Go
-
-[查看贡献记录 →](https://github.com/VSQ-Studio/SATSSTV-Go/graphs/contributors)
-
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/SATSSTV-Go" alt="SATSSTV-Go contributors" width="100%">
-
-### Contributors · SATAprs-Go
-
-[查看贡献记录 →](https://github.com/VSQ-Studio/SATAprs-Go/graphs/contributors)
-
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/SATAprs-Go" alt="SATAprs-Go contributors" width="100%">
-
-### Contributors · IC-9700-Remote-Control-Switch
-
-[查看贡献记录 →](https://github.com/VSQ-Studio/IC-9700-Remote-Control-Switch/graphs/contributors)
-
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/IC-9700-Remote-Control-Switch" alt="IC-9700 Remote Control Switch contributors" width="100%">
-
-### Contributors · OrbitTLM
-
-[查看贡献记录 →](https://github.com/VSQ-Studio/OrbitTLM/graphs/contributors)
-
-<img src="https://contrib.rocks/image?repo=VSQ-Studio/OrbitTLM" alt="OrbitTLM contributors" width="100%">
-
-### How to contribute
-
-| 方式              | 你可以做什么             |
-|:--------------- |:------------------ |
-| `ISSUES`        | 报告 Bug、提出想法、讨论改进方向 |
-| `PULL REQUESTS` | 提交代码、修复问题、完善功能     |
-| `DOCUMENTATION` | 改进 README、教程和使用说明  |
-| `CODE REVIEW`   | 帮助测试、审查代码并提出建议     |
-
-<div align="center">
-
-**[浏览所有仓库并开始贡献 →](https://github.com/orgs/VSQ-Studio/repositories)**
-
-</div>
-
----
-
-## `03 / GITHUB ACTIVITY`
-
-组织的公开活动与贡献趋势。图表由 GitHub Activity Graph 服务动态生成，数据可能存在缓存或更新延迟。
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=VSQ-Studio&bg_color=080b0f&color=9cff57&line=5ee7f2&point=f4f7f8&area=true&area_color=16303a&hide_border=true&custom_title=VSQ%20STUDIO%20%2F%20PUBLIC%20ACTIVITY" alt="VSQ Studio GitHub activity graph" width="100%">
-
-</div>
-
-<div align="center">
-
-[GitHub 组织动态 →](https://github.com/orgs/VSQ-Studio/activity) · [仓库更新 →](https://github.com/orgs/VSQ-Studio/repositories)
-
-</div>
-
----
-
-## `04 / JOIN THE STUDIO`
-
-不论你是开发者、设计者、文档贡献者，还是单纯对项目感兴趣，都欢迎来到 VSQ Studio。
-
-- ⭐ 给你喜欢的仓库点 Star
-- 🐛 提交 Issue，分享问题或建议
-- 🔧 通过 Pull Request 一起改进项目
-- 💬 参与讨论，帮助社区变得更好
-
-<div align="center">
-
-### `> THANKS FOR BUILDING WITH US._`
-
-**Made with curiosity. Improved by community.**
-
-[VSQ Studio on GitHub](https://github.com/VSQ-Studio)
-
-</div>
+<p align="center">
+  <strong><code>> THANKS FOR BUILDING WITH US._</code></strong><br />
+  <sub>Made with curiosity. Improved by community.</sub>
+</p>
