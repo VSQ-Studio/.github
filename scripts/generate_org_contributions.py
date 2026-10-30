@@ -22,7 +22,7 @@ ORG = os.getenv("ORG_NAME", "VSQ-Studio")
 API_URL = os.getenv("GITHUB_API_URL", "https://api.github.com").rstrip("/")
 TOKEN = os.getenv("ORG_READ_TOKEN", "").strip()
 DAYS = int(os.getenv("CALENDAR_DAYS", "365"))
-OUT_DIR = Path(os.getenv("OUTPUT_DIR", "dist"))
+OUT_DIR = Path(os.getenv("OUTPUT_DIR", "profile/assets"))
 
 DARK = {
     "bg": "#171B22", "text": "#E6EDF3", "muted": "#9AA7B5",
@@ -94,7 +94,11 @@ def parse_commit_date(item: dict[str, Any]) -> date | None:
 
 def collect_daily_counts(start: date, end: date) -> tuple[Counter, int, int]:
     repo_path = f"/orgs/{urllib.parse.quote(ORG, safe='')}/repos?type=public&sort=created&direction=asc"
-    repos = [r for r in paged(repo_path) if not r.get("fork", False)]
+    repos = [
+        r for r in paged(repo_path)
+        if not r.get("fork", False)
+        and r.get("name", "").lower() != ".github"
+    ]
     daily: Counter = Counter()
     commits_seen = 0
     repos_checked = 0
@@ -110,11 +114,17 @@ def collect_daily_counts(start: date, end: date) -> tuple[Counter, int, int]:
             f"/repos/{urllib.parse.quote(ORG, safe='')}/{urllib.parse.quote(name, safe='')}/commits"
             f"?since={urllib.parse.quote(since)}&until={urllib.parse.quote(until)}"
         )
-        for item in paged(path):
-            day = parse_commit_date(item)
-            if day and start <= day <= end:
-                daily[day] += 1
-                commits_seen += 1
+        try:
+            for item in paged(path):
+                day = parse_commit_date(item)
+                if day and start <= day <= end:
+                    daily[day] += 1
+                    commits_seen += 1
+        except RuntimeError as exc:
+            # Empty public repositories return HTTP 409 from the commits endpoint.
+            if "HTTP 409" in str(exc) or "Git Repository is empty" in str(exc):
+                continue
+            raise
     return daily, commits_seen, repos_checked
 
 

@@ -11,25 +11,33 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
-      - name: Check out profile repository
+      - name: Check out the default branch
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
 
-      - name: Generate organization-wide commit calendar
+      - name: Generate organization-wide daily commit calendar
         run: python3 scripts/generate_org_contributions.py
         env:
           ORG_NAME: VSQ-Studio
-          # Optional fine-grained PAT for a higher API rate limit.
-          # Public repositories can be read without this secret.
+          # Optional fine-grained PAT with Metadata: read for public repositories.
+          # Add it as ORG_READ_TOKEN only if the unauthenticated API rate limit is insufficient.
           ORG_READ_TOKEN: ${{ secrets.ORG_READ_TOKEN }}
           CALENDAR_DAYS: 365
-          OUTPUT_DIR: dist
+          OUTPUT_DIR: profile/assets
 
-      - name: Publish generated SVG calendars to the output branch
-        uses: crazy-max/ghaction-github-pages@v5
-        with:
-          target_branch: output
-          build_dir: dist
+      - name: Commit updated calendar assets
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/assets/org-contribution-calendar.svg profile/assets/org-contribution-calendar-dark.svg
+          if git diff --cached --quiet; then
+            echo "Calendar assets are unchanged."
+            exit 0
+          fi
+          git commit -m "chore: update organization contribution calendar [skip ci]"
+          git push origin "HEAD:${DEFAULT_BRANCH}"

@@ -3,20 +3,12 @@
      width="1200" height="250" viewBox="0 0 1200 250"
      role="img" aria-labelledby="title desc">
   <title id="title">VSQ Studio Pixel Header — Dark Theme</title>
-  <desc id="desc">VSQ Studio official organization logo with a pixel-art inspired banner. This file is selected automatically for the GitHub dark color theme.</desc>
+  <desc id="desc">Pixel-art inspired VSQ Studio banner background. The README overlays the matching local PNG logo in the exported banner image.</desc>
   <defs>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity="0.055" stroke-width="1" />
     </pattern>
-    
-    <filter id="logoInvert" color-interpolation-filters="sRGB">
-      <feComponentTransfer>
-        <feFuncR type="table" tableValues="1 0" />
-        <feFuncG type="table" tableValues="1 0" />
-        <feFuncB type="table" tableValues="1 0" />
-      </feComponentTransfer>
-    </filter>
-  </defs>
+</defs>
   <rect width="1200" height="250" fill="#111318" />
   <rect width="1200" height="250" fill="url(#grid)" />
   <rect x="14" y="14" width="1172" height="222" fill="none" stroke="#444B57" stroke-width="4" shape-rendering="crispEdges" />
@@ -25,14 +17,8 @@
   <rect x="1134" y="228" width="52" height="8" fill="#F5A9B8" shape-rendering="crispEdges" />
   <rect x="1178" y="184" width="8" height="52" fill="#F5A9B8" shape-rendering="crispEdges" />
 
-  <!-- Official VSQ-Studio organization avatar. In dark mode the source logo is inverted
-       so the dark mark becomes white and its white canvas blends into the dark banner. -->
   <rect x="60" y="47" width="164" height="164" fill="#111318" stroke="#5BCEFA" stroke-width="4" shape-rendering="crispEdges" />
-  <image x="64" y="51" width="156" height="156"
-         href="https://avatars.githubusercontent.com/u/342573852?s=200&amp;v=4" xlink:href="https://avatars.githubusercontent.com/u/342573852?s=200&amp;v=4"
-         preserveAspectRatio="xMidYMid meet" filter="url(#logoInvert)" />
-
-  <g font-family="Courier New, Courier, monospace">
+<g font-family="Courier New, Courier, monospace">
     <text x="260" y="119" font-size="66" font-weight="700" letter-spacing="3" fill="#FFFFFF">VSQ STUDIO</text>
     <rect x="262" y="139" width="470" height="5" fill="#5BCEFA" shape-rendering="crispEdges" />
     <rect x="732" y="139" width="90" height="5" fill="#F5A9B8" shape-rendering="crispEdges" />

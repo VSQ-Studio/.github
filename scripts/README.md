@@ -1,7 +1,21 @@
 # Organization contribution calendar generator
 
-`generate_org_contributions.py` enumerates the VSQ-Studio organization's public, non-fork repositories and aggregates commits visible on each repository's default branch. It writes light and dark SVG heatmaps into `OUTPUT_DIR`.
+This script builds two GitHub-style SVG contribution heatmaps for the `VSQ-Studio` organization.
 
-Environment variables: `ORG_NAME` (default `VSQ-Studio`), optional `ORG_READ_TOKEN`, `CALENDAR_DAYS` (default `365`), `OUTPUT_DIR` (default `dist`), and optional `GITHUB_API_URL` for GitHub Enterprise.
+## Data source
 
-The generator does not require a maintainer username and does not read a personal contribution calendar. It counts commits only; it does not currently include Issues, Pull Requests, reviews, releases, or private repositories.
+- Lists public repositories owned by `VSQ-Studio`.
+- Excludes Fork repositories and the `.github` meta repository (the latter receives automated calendar asset commits).
+- Reads commit history from each repository's default branch for the previous 365 UTC dates.
+- Counts one commit per repository commit record and renders separate dark/light SVG themes.
+- Does not use any maintainer's personal contribution calendar.
+
+## Run locally
+
+```bash
+python3 scripts/generate_org_contributions.py
+```
+
+By default, output is written to `profile/assets/`. Override with `OUTPUT_DIR` when needed.
+
+A fine-grained GitHub token with public repository metadata read access may be supplied through `ORG_READ_TOKEN` to avoid unauthenticated API rate limits. The generator intentionally fails on API rate-limit or permission errors rather than publishing incomplete data.

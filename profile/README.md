@@ -4,9 +4,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/pixel-header-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="assets/pixel-header-light.svg" />
-    <img src="assets/pixel-header.svg" width="100%" alt="VSQ Studio — Build, Share, Explore" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/pixel-header-dark.png" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/pixel-header-light.png" />
+    <img src="assets/pixel-header.png" width="100%" alt="VSQ Studio — Build, Share, Explore" />
   </picture>
 </p>
 
@@ -32,13 +32,25 @@ VSQ Studio 是一个面向创作者与开发者的开源协作空间，关注软
 ## `02 / 社区贡献`
 
 <p align="center">
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio GitHub statistics" />
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio repositories per language" />
-  <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VSQ-Studio&theme=github_dark" alt="VSQ Studio most used commit languages" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VSQ-Studio&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VSQ-Studio&theme=github" />
+    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=VSQ-Studio&theme=github" alt="VSQ Studio GitHub organization statistics" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VSQ-Studio&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VSQ-Studio&theme=github" />
+    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=VSQ-Studio&theme=github" alt="VSQ Studio repositories per language" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VSQ-Studio&theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VSQ-Studio&theme=github" />
+    <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=VSQ-Studio&theme=github" alt="VSQ Studio most used commit languages" />
+  </picture>
 </p>
 
 <p align="center">
-  <img width="100%" src="https://github-profile-trophy.vercel.app/?username=VSQ-Studio&theme=matrix&no-frame=true&no-bg=true&margin-w=4&column=7" alt="VSQ Studio GitHub trophies" />
+  <sub>以上统计按 VSQ-Studio 组织公开仓库聚合；卡片会根据当前 GitHub 主题切换明暗配色。</sub>
 </p>
 
 <img src="assets/pixel-divider.svg" width="100%" alt="" />
@@ -47,28 +59,35 @@ VSQ Studio 是一个面向创作者与开发者的开源协作空间，关注软
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar.svg" />
-    <img src="https://raw.githubusercontent.com/VSQ-Studio/.github/output/org-contribution-calendar.svg" width="100%" alt="VSQ-Studio 组织级每日提交贡献日历" />
+    <source media="(prefers-color-scheme: dark)" srcset="assets/org-contribution-calendar-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="assets/org-contribution-calendar.svg" />
+    <img src="assets/org-contribution-calendar.svg" width="100%" alt="VSQ-Studio 组织级每日提交贡献日历" />
   </picture>
 </p>
 
 <p align="center">
-  <sub>组织级贡献日历由 GitHub Actions 自动生成：汇总 VSQ-Studio 所有公开、非 Fork 仓库默认分支中的提交记录，按 UTC 日期统计最近 365 天的活动。不依赖任何维护者个人账号。</sub>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VSQ-Studio&amp;theme=github_dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VSQ-Studio&amp;theme=github" />
+    <img width="100%" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=VSQ-Studio&amp;theme=github" alt="VSQ-Studio organization repository activity details" />
+  </picture>
+</p>
+
+<p align="center">
+  <sub>日历按 UTC 日期汇总 VSQ-Studio 的公开项目仓库（非 Fork）默认分支提交；排除用于存放组织主页与日历文件的 .github 仓库，避免自动更新提交影响统计。下方 Profile Details 为组织模式，展示仓库创建时间线，而非个人贡献记录。</sub>
 </p>
 
 <img src="assets/pixel-divider.svg" width="100%" alt="" />
 
-## `04 / 加入 VSQ STUDIO`
+## `04 / 参与开发`
 
-无论你是开发者、设计者、文档贡献者，还是单纯对项目感兴趣，都欢迎浏览我们的开源项目，并通过 Issue 或 Pull Request 参与改进。
+欢迎开发者、设计者与文档贡献者参与 VSQ-Studio 的开源项目。选择感兴趣的仓库，从 Issue 讨论、提交改进建议或发起 Pull Request 开始参与开发。
 
 <p align="center">
-  <a href="https://github.com/orgs/VSQ-Studio/repositories"><img src="https://img.shields.io/badge/VIEW_ALL_PROJECTS-5BCEFA?style=flat-square&logo=github&logoColor=111318" alt="View all projects" /></a>
-  <a href="https://github.com/VSQ-Studio/.github"><img src="https://img.shields.io/badge/COMMUNITY-F5A9B8?style=flat-square&logo=github&logoColor=111318" alt="Community repository" /></a>
+  <a href="https://github.com/orgs/VSQ-Studio/repositories"><img src="https://img.shields.io/badge/EXPLORE_PROJECTS-5BCEFA?style=flat-square&amp;logo=github&amp;logoColor=111318" alt="Explore projects" /></a>
 </p>
 
 <p align="center">
-  <strong><code>> THANKS FOR BUILDING WITH US._</code></strong><br />
+  <strong><code>&gt; BUILD TOGETHER. GROW TOGETHER._</code></strong><br />
   <sub>Made with curiosity. Improved by community.</sub>
 </p>
