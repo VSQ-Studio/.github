@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="178" viewBox="0 0 1000 178">
+<rect width="1000" height="178" rx="8" fill="#071A30"/>
+<text x="28" y="38" fill="#2CE3F3" font-family="monospace" font-size="18" font-weight="bold">VSQ-STUDIO / PUBLIC ACTIVITY</text>
+<text x="28" y="76" fill="#B9D9EA" font-family="monospace" font-size="14">Chart will be refreshed automatically by GitHub Actions.</text>
+<rect x="28" y="104" width="944" height="12" fill="#0C4267"/>
+<text x="28" y="148" fill="#7CAFCB" font-family="monospace" font-size="12">Waiting for the first scheduled update</text>
+</svg>
